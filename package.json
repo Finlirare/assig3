@@ -1,0 +1,26 @@
+{
+  "name": "carlsson_assig2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "angular-cli": "^1.0.0-beta.28.3",
+    "body-parser": "^1.18.3",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.6.1",
+    "mysql2-promise": "^0.1.4",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "path": "^0.12.7",
+    "rss-parser": "^3.5.2",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Finlirare",
+  "license": "ISC"
+}

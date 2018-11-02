@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 3</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+		<script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+		<script src="https://d3js.org/d3-path.v1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/researcher.css">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<script type="text/javascript" src="researcher.js"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="705830739244-ap66lon7fne6c8v2p558m27i3oslth5a.apps.googleusercontent.com">
+	</head>
+	<body>
+		<div id="container">
+			<div id="nav">
+				<span class="width">
+					<div>
+						<div>
+							<p id="therSess" class="active">Therapy sessions </p>
+						</div>
+						<div>
+							<p id="rss"> Rss</p>
+						</div>
+					</div>
+					<div id="logout" class="nav-item">
+						<a href="/logout">Logout</a>
+					</div>
+				</span>
+			</div>
+			<div class="content">
+				<div id="sessFeed">
+					<h1>Test Sessions</h1>
+					<table id="sessions" class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>Therapy list</th>
+								<th>Patient username</th>
+								<th>Test session</th>
+								<th>Data</th>
+								<th>Notes</th>
+								<th>Medicine dose</th>
+							</tr>
+						</thead>
+						<tbody id="therSession">
+						</tbody>
+					</table>
+				</div>
+				<div id="exData">
+				<h2>Select a data file to view</h2>
+					<div id="svgContainer">
+						<span class="glyphicon glyphicon-edit"></span>
+					</div>
+				</div>
+				<div id="rssFeed">
+					<h1>Rss feed</h1>
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Publication Date</th>
+							</tr>
+						</thead>
+						<tbody id="rssData">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

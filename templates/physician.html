@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 3</title>
+		<!--cdn links-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+		<script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+		<script src="https://d3js.org/d3-path.v1.min.js"></script>
+		<script src="https://d3js.org/d3-shape.v1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/physician.css">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<script type="text/javascript" src="physician.js"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="604880648774-4qbuienc8391qcjktj78qkpnrqjt16pr.apps.googleusercontent.com">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="container">
+			<div id="nav">
+				<div>
+					 <h1>Physician</h1>
+				</div>
+				<div class="nav-item">
+					<a href="/logout">Logout</a>
+				</div>
+			</div>
+			<div class="dots"></div>
+			<div class="content">
+				<div id="patientActivity">
+					<h1>Test Sessions</h1>
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>Therapy list</th>
+								<th>Test session</th>
+								<th>Patient username</th>
+								<th>Data</th>
+								<th>Notes</th>
+								<th>Medicine dose</th>
+							</tr>
+						</thead>
+						<tbody id="activity">
+						</tbody>
+					</table>
+				</div>
+				<div id="exData">
+				<h2>Select a data file to view</h2>
+					<div id="svgContainer">
+						<span class="glyphicon glyphicon-edit"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

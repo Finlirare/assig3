@@ -1,0 +1,53 @@
+#nav p {
+	cursor: pointer;
+	vertical-align: bottom;
+	font-size: 2em;
+}
+
+#therSession span {
+	cursor: pointer;
+}
+
+#therSess {
+	padding-right: .4em;
+	border-right: 1px solid gray;
+}
+
+#svgContainer {
+	border:1px solid  #bacdde;
+	margin: 1em auto;
+	width: 300px;
+	height: 300px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+input {
+	max-width: 190px;
+}
+
+#sessFeed {
+	width: 60%;
+}
+#sessions {
+	border: 1px solid #d1dee9;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#exData h2 {
+	margin: 0 0 0 1.5em;
+}
+
+#rssFeed {
+	width: 80%;
+}
+.active {
+	color: #1a5b93;
+}
